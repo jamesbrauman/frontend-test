@@ -4,7 +4,8 @@
   "description": "sitepoint front end test",
   "main": "index.js",
   "scripts": {
-    "start" : "node index.js"
+    "start": "node index.js",
+    "build": "gulp build"
   },
   "keywords": [
     "sitepoint"
@@ -16,6 +17,18 @@
     "compression": "^1.3.0",
     "express": "^4.11.0",
     "lodash": "^2.4.1",
-    "morgan": "^1.5.1"
+    "morgan": "^1.5.1",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babelify": "^7.2.0",
+    "browserify": "^12.0.1",
+    "gulp": "^3.9.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.0",
+    "vinyl-source-stream": "^1.1.0"
   }
 }

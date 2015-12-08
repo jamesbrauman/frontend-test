@@ -18,8 +18,8 @@ function sendFile(name) {
 }
 
 app.get("/", sendFile("index.html"));
-app.get("/app.js", sendFile("app.js"));
-app.get("/app.css", sendFile("app.css"));
+app.get("/app.min.js", sendFile("app.min.js"));
+app.get("/app.min.css", sendFile("app.min.css"));
 
 // [json] GET /api/v1/counters
 // => [

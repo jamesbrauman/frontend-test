@@ -21,6 +21,9 @@ app.get("/", sendFile("index.html"));
 app.get("/app.min.js", sendFile("app.min.js"));
 app.get("/app.min.css", sendFile("app.min.css"));
 
+app.use('/fonts', express.static('static/fonts'));
+app.use('/img', express.static('static/img'));
+
 // [json] GET /api/v1/counters
 // => [
 // =>   {id: "asdf", title: "boop",  count: 4},
@@ -38,7 +41,7 @@ app.get("/api/v1/counters", function(req, res) {
 // => ]
 app.post("/api/v1/counter", function(req, res) {
   res.json(Counters.create(req.body.title));
-})
+});
 
 // [json] DELETE {id: "asdf"} /api/v1/counter
 // => [

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "build": "gulp build"
+    "build": "./node_modules/.bin/gulp build"
   },
   "keywords": [
     "sitepoint"
@@ -13,9 +13,12 @@
   "author": "orodio",
   "license": "ISC",
   "dependencies": {
+    "alt": "0.17.4",
     "body-parser": "^1.10.1",
+    "bootstrap": "^4.0.0-alpha.2",
     "compression": "^1.3.0",
     "express": "^4.11.0",
+    "font-awesome": "^4.5.0",
     "lodash": "^2.4.1",
     "morgan": "^1.5.1",
     "react": "^0.14.3",

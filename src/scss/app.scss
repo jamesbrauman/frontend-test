@@ -1,0 +1,41 @@
+@import 'variables';
+@import '../../node_modules/bootstrap/scss/bootstrap-flex';
+@import '../../node_modules/font-awesome/scss/font-awesome';
+
+body {
+  min-height: 100vh;
+  background: url('img/background.jpg') no-repeat center center;
+  background-size: cover;
+  padding-top: 100px;
+}
+
+.btn-group-sm .textual {
+  position: relative;
+  float: left;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  display: inline-block;
+  border: 1px solid transparent;
+
+  &.info {
+    background-color: #9575cd;
+    color: #fff;
+  }
+}
+
+#application-container {
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.application {
+  .counter-list {
+    .list-group-item {
+      text-align: center;
+    }
+  }
+  .counter-sum {
+    text-align: center;
+  }
+}

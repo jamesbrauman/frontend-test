@@ -20,9 +20,14 @@ gulp.task('stylesheets', function () {
         .pipe(gulp.dest('./static'));
 });
 
+gulp.task('fonts', function() {
+    return gulp.src('./node_modules/font-awesome/fonts/*')
+        .pipe(gulp.dest('./static/fonts'));
+});
+
 gulp.task('watch', function() {
     gulp.watch('./src/js/**/*.js', ['javascript']);
     gulp.watch('./src/scss/**/*.scss', ['stylesheets'])
 });
 
-gulp.task('build', ['javascript', 'stylesheets']);
+gulp.task('build', ['javascript', 'stylesheets', 'fonts']);

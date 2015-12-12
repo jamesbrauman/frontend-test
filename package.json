@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "build": "gulp build",
-    "test": "mocha tests/integration-test.js"
+    "test": "mocha"
   },
   "keywords": [
     "sitepoint"

@@ -15,7 +15,7 @@ class CounterSum extends React.Component {
     render() {
         return (
             <div className="counter-sum">
-                <h3><span className="label label-pill label-info">The total of all counters equals {this.calculateTotal()}</span></h3>
+                <h3><span className="label label-pill label-info">The total of all counters equals <span className="counter-total">{this.calculateTotal()}</span></span></h3>
             </div>
         );
     }

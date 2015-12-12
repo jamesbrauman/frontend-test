@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "build": "./node_modules/.bin/gulp build"
+    "build": "gulp build",
+    "test": "node tests/integration-test.js"
   },
   "keywords": [
     "sitepoint"
@@ -32,6 +33,9 @@
     "gulp": "^3.9.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.1.0",
+    "mocha": "^2.3.4",
+    "phantomjs": "^1.9.19",
+    "selenium-webdriver": "^2.48.2",
     "vinyl-source-stream": "^1.1.0"
   }
 }
